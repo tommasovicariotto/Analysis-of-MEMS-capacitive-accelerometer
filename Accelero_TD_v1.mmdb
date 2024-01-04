@@ -1,0 +1,686 @@
+
+<___Document DocBuildTag="" DocCommit="3d3f1880f11f" DocType="mmdb" DocVersion="7.0.0">
+
+  <___Parser ___Name="Variables" ___Type="VariableRoot" isExpanded="true">
+    <___Item Imported="true" ___Name="T" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="273.15" ___lastKnownValue="273.15" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="Pressure" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="101325" ___lastKnownValue="101325.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+  </___Parser>
+
+  <___DocumentTree ___Name="Material List" ___Type="MaterialTreeRoot" isExpanded="true">
+    <___Item ___Name="Air" ___Type="FluidMaterial">
+      <___Properties VersionNumber="2" isEnable="true">
+        <visualProperties isEnable="true">
+          <color ___blue="54" ___green="245" ___red="242" useDefaultColor="true"/>
+          <transparency ___expression="0"/>
+        </visualProperties>
+        <density Comment="&lt;body lang=EN-US style='tab-interval:.5in'>&lt;h3>Density of Air&lt;/h3>The density of air is calculated using the ideal gas law, expressed as a function of temperature &lt;b>T&lt;/b> and pressure &lt;b>p&lt;/b>: &lt;br>&lt;br>&lt;th>&amp;#948; = p /(R T) &lt;/th>&lt;br>&lt;br>where &lt;b>R&lt;/b> is the specific gas constant for dry air." ___expression="Pressure/(287.058*T)" ___lastKnownValue="1.292247655377802" ___unitName="kg/m^3"/>
+        <viscosity Comment="&lt;body lang=EN-US style='tab-interval:.5in'>&lt;h3>Viscosity of Air&lt;/h3>The default value of the (dynamic) viscosity of air is based on Sutherland's formula:&lt;br>&lt;br>&lt;th>&amp;#956; = &amp;#956;0*(T0+S)/(T+S)*(T/T0)^(3/2) &lt;/th>&lt;br>&lt;br>where &lt;b>&amp;#956;0&lt;/b> is the viscosity at the reference temperature &lt;b>T0&lt;/b> and &lt;b>S&lt;/b> is Sutherland's constant for the gaseous material in question.&lt;/th>&lt;br>&lt;br>&lt;h4>Reference:&lt;/h4>Sutherland, W. (1893), &quot;The viscosity of gases and molecular forces&quot;,Philosophical Magazine, S. 5, 36, pp.507-531(1893) " ___expression="1.716e-5*(273.15+110.4)/(T+110.4)*(T/273.15)^(3/2)" ___lastKnownValue="1.716e-05" ___unitName="Pa*s"/>
+        <relativePermittivity ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+        <compressibility Comment="&lt;body lang=EN-US style='tab-interval:.5in'>&lt;h3>Compressibility&lt;/h3>The compressibility is defined as: &lt;br>&lt;br>&lt;th>&amp;#946; = -1/V*&amp;#948;V/&amp;#948;p &lt;/th>&lt;br>&lt;br>where &lt;b>V&lt;/b> is volume and &lt;b>p&lt;/b> is pressure.&lt;br>The specification above is incomplete, because for any object or system the magnitude of the compressibility depends strongly on whether the process is adiabatic or isothermal.&lt;br>Isothermal compressibility is defined by: &lt;br>&lt;br>&lt;th>&amp;#946;&lt;sub>T&lt;/sub> = -1/V*(&amp;#948;V/&amp;#948;p)&lt;sub>T&lt;/sub>&lt;/th>&lt;br>&lt;br>where the subscript T indicates that the partial differential is to be taken at constant temperature.&lt;br>Isentropic compressibility is defined by: &lt;br>&lt;br>&lt;th>&amp;#946;&lt;sub>S&lt;/sub> = -1/V*(&amp;#948;V/&amp;#948;p)&lt;sub>S&lt;/sub>&lt;/th>&lt;br>&lt;br>where the subscript S indicates that the partial differential is to be taken at constant entropy.&lt;br>Isentropic compressibility can be expressed : &lt;br>&lt;br>&lt;th>&amp;#946;&lt;sub>S&lt;/sub> = 1/(&amp;#961;c&lt;sup>2&lt;/sup>)&lt;/th>&lt;br>&lt;br>where &lt;b>&amp;#961;&lt;/b> is the density, and &lt;b>c&lt;/b> is the speed of sound.&lt;br>&lt;br>Assuming ideal gas law, &lt;b>&amp;#946;&lt;sub>T&lt;/sub>&lt;/b> and &lt;b>&amp;#946;&lt;sub>S&lt;/sub>&lt;/b> have a simple expression: &lt;br>&lt;br>&lt;th>&amp;#946;&lt;sub>T&lt;/sub> = 1/p&lt;/th>&lt;br>&lt;br>&lt;th>&amp;#946;&lt;sub>S&lt;/sub> = 1/(&amp;#947;p)&lt;/th>&lt;br>&lt;br>where &lt;b>&amp;#947;&lt;/b> is the adiabic index. For monoatomic (noble) gases, it is equal to 1.6667, and for diatomic gases, it is equal to 1.4.&lt;br>" ___expression="1/Pressure" ___lastKnownValue="9.869232667160129e-06" ___unitName="1/Pa"/>
+      </___Properties>
+    </___Item>
+    <___Item Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___Name="Polysilicon" ___Type="SolidMaterial" isExpanded="true">
+      <___Properties isEnable="true">
+        <visualProperties isEnable="true" isExpanded="true">
+          <color Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___blue="0" ___green="128" ___red="0" useDefaultColor="true"/>
+          <transparency Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___expression="0"/>
+        </visualProperties>
+        <waferOrientation ___activeMember="orientationEulerAngles ">
+          <waferCut ___activeMember=""/>
+          <orientationEulerAngles isEnable="true">
+            <Phi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Theta ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Psi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerAngles>
+          <orientationEulerParameters isEnable="true">
+            <rx ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <ry ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <rz ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerParameters>
+        </waferOrientation>
+        <density ___expression="2230" ___lastKnownValue="2230.0" ___unitName="kg/m^3" isExpanded="true"/>
+        <elastic ___activeMember="elasticIsotropic " isExpanded="true">
+          <elasticIsotropic isEnable="true" isExpanded="true">
+            <E ___expression="1.600e11" ___lastKnownValue="160000000000.0" ___unitName="Pa"/>
+            <nu ___expression="0.22" ___lastKnownValue="0.22" ___unitName="nounit"/>
+          </elasticIsotropic>
+          <elasticCubic isEnable="true">
+            <E ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticCubic>
+          <elasticOrtho VersionNumber="2" isEnable="true">
+            <E1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E2 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E3 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu23 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu31 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu12 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G31 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticOrtho>
+          <elasticAnisotropic isEnable="true">
+            <C11 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C13 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C14 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C15 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C16 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C22 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C24 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C25 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C26 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C33 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C34 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C35 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C36 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C44 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C45 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C46 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C55 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C56 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C66 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticAnisotropic>
+        </elastic>
+        <stress ___activeMember="stressPlanarIso ">
+          <stressPlanarIso isEnable="true">
+            <stress ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressPlanarIso>
+          <stressAnisotropic isEnable="true">
+            <x ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <y ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <z ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressAnisotropic>
+        </stress>
+        <stressGradientZ ___activeMember="stressGradientZPlanarIso ">
+          <stressGradientZPlanarIso isEnable="true">
+            <sg ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZPlanarIso>
+          <stressGradientZAnisotropic isEnable="true">
+            <sgx ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+            <sgy ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZAnisotropic>
+        </stressGradientZ>
+        <coefficientOfExpansion isEnable="true" isExpanded="true">
+          <alpha ___expression="4.7e-6" ___lastKnownValue="4.7e-06" ___unitName="1/K" isExpanded="true"/>
+          <zeroStressTemperature ___expression="0" ___lastKnownValue="0.0" ___unitName="Celsius"/>
+        </coefficientOfExpansion>
+        <thermalConductivity ___expression="32" ___lastKnownValue="32.0" ___unitName="W/(m*K)"/>
+        <specificHeat ___expression="100" ___lastKnownValue="100.0" ___unitName="J/(kg*K)"/>
+        <electricalConductivity ___expression="5e10" ___lastKnownValue="50000000000.0" ___unitName="S/m"/>
+        <piezoelectric ___activeMember="piezoelectricStress ">
+          <piezoelectricStress isEnable="true">
+            <e11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+          </piezoelectricStress>
+          <piezoelectricStrain isEnable="true">
+            <d11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+          </piezoelectricStrain>
+        </piezoelectric>
+        <relativePermittivity ___activeMember="relativePermittivityIsotropic " isExpanded="true">
+          <relativePermittivityIsotropic isEnable="true" isExpanded="true">
+            <er ___expression="3" ___lastKnownValue="3.0" ___unitName="nounit" isExpanded="true"/>
+          </relativePermittivityIsotropic>
+          <relativePermittivityAnisotropic isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropic>
+          <relativePermittivityIsotropicAtConstantStress isEnable="true">
+            <er ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropicAtConstantStress>
+          <relativePermittivityAnisotropicAtConstantStress isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropicAtConstantStress>
+        </relativePermittivity>
+        <piezoresistive isEnable="true">
+          <pi11 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi12 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi44 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+        </piezoresistive>
+        <relativePermeability ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" doNotDisplay="true"/>
+        <coercivity ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+        <saturationMagnetization ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+      </___Properties>
+    </___Item>
+    <___Item ___Name="Silicon" ___Type="SolidMaterial">
+      <___Properties isEnable="true">
+        <visualProperties isEnable="true" isExpanded="true">
+          <color ___blue="192" ___green="192" ___red="192" useDefaultColor="true"/>
+          <transparency ___expression="0"/>
+        </visualProperties>
+        <waferOrientation ___activeMember="orientationEulerAngles ">
+          <waferCut ___activeMember=""/>
+          <orientationEulerAngles isEnable="true">
+            <Phi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Theta ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Psi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerAngles>
+          <orientationEulerParameters isEnable="true">
+            <rx ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <ry ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <rz ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerParameters>
+        </waferOrientation>
+        <density ___expression="2500" ___lastKnownValue="2500.0" ___unitName="kg/m^3" isExpanded="true"/>
+        <elastic ___activeMember="elasticIsotropic " isExpanded="true">
+          <elasticIsotropic isEnable="true" isExpanded="true">
+            <E ___expression="1.69e11" ___lastKnownValue="169000000000.0" ___unitName="Pa"/>
+            <nu ___expression="0.3" ___lastKnownValue="0.3" ___unitName="nounit"/>
+          </elasticIsotropic>
+          <elasticCubic isEnable="true">
+            <E ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticCubic>
+          <elasticOrtho VersionNumber="2" isEnable="true">
+            <E1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E2 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E3 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu23 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu31 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu12 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G31 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticOrtho>
+          <elasticAnisotropic isEnable="true">
+            <C11 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C13 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C14 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C15 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C16 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C22 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C24 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C25 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C26 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C33 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C34 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C35 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C36 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C44 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C45 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C46 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C55 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C56 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C66 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticAnisotropic>
+        </elastic>
+        <stress ___activeMember="stressPlanarIso ">
+          <stressPlanarIso isEnable="true">
+            <stress ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressPlanarIso>
+          <stressAnisotropic isEnable="true">
+            <x ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <y ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <z ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressAnisotropic>
+        </stress>
+        <stressGradientZ ___activeMember="stressGradientZPlanarIso ">
+          <stressGradientZPlanarIso isEnable="true">
+            <sg ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZPlanarIso>
+          <stressGradientZAnisotropic isEnable="true">
+            <sgx ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+            <sgy ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZAnisotropic>
+        </stressGradientZ>
+        <coefficientOfExpansion isEnable="true" isExpanded="true">
+          <alpha ___expression="2.5e-6" ___lastKnownValue="2.5e-06" ___unitName="1/K" isExpanded="true"/>
+          <zeroStressTemperature ___expression="0" ___lastKnownValue="0.0" ___unitName="Celsius"/>
+        </coefficientOfExpansion>
+        <thermalConductivity ___expression="148" ___lastKnownValue="148.0" ___unitName="W/(m*K)"/>
+        <specificHeat ___expression="712" ___lastKnownValue="712.0" ___unitName="J/(kg*K)"/>
+        <electricalConductivity ___expression="0" ___lastKnownValue="0.0" ___unitName="S/m"/>
+        <piezoelectric ___activeMember="piezoelectricStress ">
+          <piezoelectricStress isEnable="true">
+            <e11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+          </piezoelectricStress>
+          <piezoelectricStrain isEnable="true">
+            <d11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+          </piezoelectricStrain>
+        </piezoelectric>
+        <relativePermittivity ___activeMember="relativePermittivityIsotropic " isExpanded="true">
+          <relativePermittivityIsotropic isEnable="true" isExpanded="true">
+            <er ___expression="1.19e1" ___lastKnownValue="11.9" ___unitName="nounit"/>
+          </relativePermittivityIsotropic>
+          <relativePermittivityAnisotropic isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropic>
+          <relativePermittivityIsotropicAtConstantStress isEnable="true">
+            <er ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropicAtConstantStress>
+          <relativePermittivityAnisotropicAtConstantStress isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropicAtConstantStress>
+        </relativePermittivity>
+        <piezoresistive isEnable="true">
+          <pi11 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi12 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi44 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+        </piezoresistive>
+        <relativePermeability ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" doNotDisplay="true"/>
+        <coercivity ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+        <saturationMagnetization ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+      </___Properties>
+    </___Item>
+    <___Item Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___Name="Thermal Oxide" ___Type="SolidMaterial">
+      <___Properties isEnable="true">
+        <visualProperties isEnable="true" isExpanded="true">
+          <color ___blue="0" ___green="0" ___red="255" useDefaultColor="true"/>
+          <transparency ___expression="0"/>
+        </visualProperties>
+        <waferOrientation ___activeMember="orientationEulerAngles ">
+          <waferCut ___activeMember=""/>
+          <orientationEulerAngles isEnable="true" isExpanded="true">
+            <Phi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Theta ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Psi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerAngles>
+          <orientationEulerParameters isEnable="true">
+            <rx ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <ry ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <rz ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerParameters>
+        </waferOrientation>
+        <density ___expression="2700" ___lastKnownValue="2700.0" ___unitName="kg/m^3" isExpanded="true"/>
+        <elastic ___activeMember="elasticIsotropic " isExpanded="true">
+          <elasticIsotropic isEnable="true" isExpanded="true">
+            <E ___expression="0.222e12" ___lastKnownValue="222000000000.0" ___unitName="Pa"/>
+            <nu ___expression="0.27" ___lastKnownValue="0.27" ___unitName="nounit"/>
+          </elasticIsotropic>
+          <elasticCubic isEnable="true">
+            <E ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticCubic>
+          <elasticOrtho VersionNumber="2" isEnable="true">
+            <E1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E2 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E3 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu23 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu31 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu12 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G31 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticOrtho>
+          <elasticAnisotropic isEnable="true">
+            <C11 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C13 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C14 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C15 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C16 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C22 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C24 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C25 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C26 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C33 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C34 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C35 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C36 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C44 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C45 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C46 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C55 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C56 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C66 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticAnisotropic>
+        </elastic>
+        <stress ___activeMember="stressPlanarIso ">
+          <stressPlanarIso isEnable="true" isExpanded="true">
+            <stress ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressPlanarIso>
+          <stressAnisotropic isEnable="true">
+            <x ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <y ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <z ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressAnisotropic>
+        </stress>
+        <stressGradientZ ___activeMember="stressGradientZPlanarIso ">
+          <stressGradientZPlanarIso isEnable="true">
+            <sg ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZPlanarIso>
+          <stressGradientZAnisotropic isEnable="true">
+            <sgx ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+            <sgy ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZAnisotropic>
+        </stressGradientZ>
+        <coefficientOfExpansion isEnable="true" isExpanded="true">
+          <alpha ___expression="1.6e-6" ___lastKnownValue="1.6e-06" ___unitName="1/K" isExpanded="true"/>
+          <zeroStressTemperature ___expression="0" ___lastKnownValue="0.0" ___unitName="Celsius"/>
+        </coefficientOfExpansion>
+        <thermalConductivity ___expression="24" ___lastKnownValue="24.0" ___unitName="W/(m*K)"/>
+        <specificHeat ___expression="170" ___lastKnownValue="170.0" ___unitName="J/(kg*K)"/>
+        <electricalConductivity ___expression="0.001" ___lastKnownValue="0.001" ___unitName="S/m"/>
+        <piezoelectric ___activeMember="piezoelectricStress ">
+          <piezoelectricStress isEnable="true">
+            <e11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+          </piezoelectricStress>
+          <piezoelectricStrain isEnable="true">
+            <d11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+          </piezoelectricStrain>
+        </piezoelectric>
+        <relativePermittivity ___activeMember="relativePermittivityIsotropic " isExpanded="true">
+          <relativePermittivityIsotropic isEnable="true" isExpanded="true">
+            <er ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropic>
+          <relativePermittivityAnisotropic isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropic>
+          <relativePermittivityIsotropicAtConstantStress isEnable="true">
+            <er ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropicAtConstantStress>
+          <relativePermittivityAnisotropicAtConstantStress isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropicAtConstantStress>
+        </relativePermittivity>
+        <piezoresistive isEnable="true">
+          <pi11 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi12 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi44 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+        </piezoresistive>
+        <relativePermeability ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" doNotDisplay="true"/>
+        <coercivity ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+        <saturationMagnetization ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+      </___Properties>
+    </___Item>
+    <___Item Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica'; font-size:8pt;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___Name="Aluminum" ___Type="SolidMaterial">
+      <___Properties isEnable="true">
+        <visualProperties isEnable="true" isExpanded="true">
+          <color ___blue="128" ___green="128" ___red="0" useDefaultColor="true"/>
+          <transparency ___expression="0"/>
+        </visualProperties>
+        <waferOrientation ___activeMember="orientationEulerAngles ">
+          <waferCut ___activeMember=""/>
+          <orientationEulerAngles isEnable="true" isExpanded="true">
+            <Phi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Theta ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <Psi ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerAngles>
+          <orientationEulerParameters isEnable="true">
+            <rx ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <ry ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+            <rz ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </orientationEulerParameters>
+        </waferOrientation>
+        <density ___expression="2300" ___lastKnownValue="2300.0" ___unitName="kg/m^3" isExpanded="true"/>
+        <elastic ___activeMember="elasticIsotropic " isExpanded="true">
+          <elasticIsotropic isEnable="true" isExpanded="true">
+            <E ___expression="77e9" ___lastKnownValue="77000000000.0" ___unitName="Pa"/>
+            <nu ___expression="0.3" ___lastKnownValue="0.3" ___unitName="nounit"/>
+          </elasticIsotropic>
+          <elasticCubic isEnable="true">
+            <E ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticCubic>
+          <elasticOrtho VersionNumber="2" isEnable="true">
+            <E1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E2 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <E3 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <nu23 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu31 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <nu12 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <G23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G31 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <G12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticOrtho>
+          <elasticAnisotropic isEnable="true">
+            <C11 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C12 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C13 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C14 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C15 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C16 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C22 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C23 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C24 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C25 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C26 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C33 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C34 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C35 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C36 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C44 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C45 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C46 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C55 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C56 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+            <C66 ___expression="" ___lastKnownValue="nan.0" ___unitName="Pa"/>
+          </elasticAnisotropic>
+        </elastic>
+        <stress ___activeMember="stressPlanarIso ">
+          <stressPlanarIso isEnable="true">
+            <stress ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressPlanarIso>
+          <stressAnisotropic isEnable="true">
+            <x ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <y ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+            <z ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa"/>
+          </stressAnisotropic>
+        </stress>
+        <stressGradientZ ___activeMember="stressGradientZPlanarIso ">
+          <stressGradientZPlanarIso isEnable="true">
+            <sg ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZPlanarIso>
+          <stressGradientZAnisotropic isEnable="true">
+            <sgx ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+            <sgy ___expression="0" ___lastKnownValue="0.0" ___unitName="Pa/m"/>
+          </stressGradientZAnisotropic>
+        </stressGradientZ>
+        <coefficientOfExpansion isEnable="true" isExpanded="true">
+          <alpha ___expression="2.31e-5" ___lastKnownValue="2.31e-05" ___unitName="1/K" isExpanded="true"/>
+          <zeroStressTemperature ___expression="0" ___lastKnownValue="0.0" ___unitName="Celsius"/>
+        </coefficientOfExpansion>
+        <thermalConductivity ___expression="240" ___lastKnownValue="240.0" ___unitName="W/(m*K)"/>
+        <specificHeat ___expression="930" ___lastKnownValue="930.0" ___unitName="J/(kg*K)"/>
+        <electricalConductivity Comment="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xA;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xA;p, li { white-space: pre-wrap; }&#xA;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;>&#xA;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;>&lt;/p>&lt;/body>&lt;/html>" ___expression="0.018*T^4-4.0161*T^3+3307.8*T^2-1e6*T+2e8" ___lastKnownValue="192002213.562376" ___unitName="S/m" isExpanded="true"/>
+        <piezoelectric ___activeMember="piezoelectricStress ">
+          <piezoelectricStress isEnable="true">
+            <e11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+            <e36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/m^2"/>
+          </piezoelectricStress>
+          <piezoelectricStrain isEnable="true">
+            <d11 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d12 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d13 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d14 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d15 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d16 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d21 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d22 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d23 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d24 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d25 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d26 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d31 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d32 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d33 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d34 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d35 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+            <d36 ___expression="0" ___lastKnownValue="0.0" ___unitName="C/N"/>
+          </piezoelectricStrain>
+        </piezoelectric>
+        <relativePermittivity ___activeMember="relativePermittivityIsotropic ">
+          <relativePermittivityIsotropic isEnable="true">
+            <er ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropic>
+          <relativePermittivityAnisotropic isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropic>
+          <relativePermittivityIsotropicAtConstantStress isEnable="true">
+            <er ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityIsotropicAtConstantStress>
+          <relativePermittivityAnisotropicAtConstantStress isEnable="true">
+            <erx ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <ery ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+            <erz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          </relativePermittivityAnisotropicAtConstantStress>
+        </relativePermittivity>
+        <piezoresistive isEnable="true">
+          <pi11 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi12 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+          <pi44 ___expression="0" ___lastKnownValue="0.0" ___unitName="1/Pa"/>
+        </piezoresistive>
+        <relativePermeability ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" doNotDisplay="true"/>
+        <coercivity ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+        <saturationMagnetization ___expression="" ___lastKnownValue="nan.0" ___unitName="A/m" doNotDisplay="true"/>
+      </___Properties>
+    </___Item>
+  </___DocumentTree>
+
+</___Document>

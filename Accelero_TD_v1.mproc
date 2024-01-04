@@ -1,0 +1,164 @@
+
+<___Document DocBuildTag="" DocCommit="3d3f1880f11f" DocType="proc" DocVersion="7.0.0">
+
+  <___Properties isEnable="true">
+    <MaterialDataBaseFile RelativeFileName="./Accelero_TD_v1.mmdb" ___text="C:/Users/scien/Desktop/Accelero_TD_v1.mmdb" readonly="true"/>
+  </___Properties>
+
+  <___Parser ___Name="Variables" ___Type="VariableRoot" isExpanded="true">
+    <___Item Imported="true" Overridden="true" ___Name="T" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="298.5" ___lastKnownValue="298.5" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="Pressure" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="101325" ___lastKnownValue="101325.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item ___Name="ElectrodeThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="0.1" ___lastKnownValue="0.1" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item ___Name="SacrificalThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="4.1" ___lastKnownValue="4.1" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item ___Name="StructureThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="15" ___lastKnownValue="15.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+  </___Parser>
+
+  <___DocumentTree ___Name="Substrate" ___Type="Substrate" isExpanded="true">
+    <___Properties VersionNumber="3" isEnable="true">
+      <material ___activeMember="Silicon ">
+        <Polysilicon isEnable="true">
+          <color ___blue="255" ___green="0" ___red="255" useDefaultColor="true"/>
+        </Polysilicon>
+        <Silicon isEnable="true">
+          <color ___blue="192" ___green="192" ___red="192" useDefaultColor="true"/>
+        </Silicon>
+        <Thermal___Oxide isEnable="true">
+          <color ___blue="0" ___green="0" ___red="255" useDefaultColor="true"/>
+        </Thermal___Oxide>
+        <Aluminum isEnable="true">
+          <color ___blue="128" ___green="128" ___red="0" useDefaultColor="true"/>
+        </Aluminum>
+      </material>
+      <thickness ___expression="200" ___lastKnownValue="200.0" ___unitName="um"/>
+      <verticalOffset ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+    </___Properties>
+    <___Item VersionNumber="2" ___Name="Electrode" ___Type="StackMaterial">
+      <___Properties VersionNumber="3" isEnable="true">
+        <material ___activeMember="Aluminum " isExpanded="true">
+          <Polysilicon isEnable="true">
+            <color ___blue="0" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Polysilicon>
+          <Silicon isEnable="true">
+            <color ___blue="192" ___green="192" ___red="192" useDefaultColor="true"/>
+          </Silicon>
+          <Thermal___Oxide isEnable="true">
+            <color ___blue="0" ___green="0" ___red="255" useDefaultColor="true"/>
+          </Thermal___Oxide>
+          <Aluminum isEnable="true" isExpanded="true">
+            <color ___blue="128" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Aluminum>
+        </material>
+        <thickness ___expression="ElectrodeThickness" ___lastKnownValue="0.1" ___unitName="um" isExpanded="true"/>
+        <verticalOffset ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+      </___Properties>
+    </___Item>
+    <___Item VersionNumber="2" ___Name="Sacrifice" ___Type="StackMaterial">
+      <___Properties VersionNumber="3" isEnable="true">
+        <material ___activeMember="Thermal___Oxide " isExpanded="true">
+          <Polysilicon isEnable="true">
+            <color ___blue="0" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Polysilicon>
+          <Silicon isEnable="true">
+            <color ___blue="192" ___green="192" ___red="192" useDefaultColor="true"/>
+          </Silicon>
+          <Thermal___Oxide isEnable="true" isExpanded="true">
+            <color ___blue="0" ___green="0" ___red="255" useDefaultColor="true"/>
+          </Thermal___Oxide>
+          <Aluminum isEnable="true">
+            <color ___blue="128" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Aluminum>
+        </material>
+        <thickness ___expression="SacrificalThickness" ___lastKnownValue="4.1" ___unitName="um" isExpanded="true"/>
+        <verticalOffset ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+      </___Properties>
+    </___Item>
+    <___Item VersionNumber="2" ___Name="Structure" ___Type="StackMaterial">
+      <___Properties VersionNumber="3" isEnable="true">
+        <material ___activeMember="Polysilicon " isExpanded="true">
+          <Polysilicon isEnable="true" isExpanded="true">
+            <color ___blue="0" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Polysilicon>
+          <Silicon isEnable="true">
+            <color ___blue="192" ___green="192" ___red="192" useDefaultColor="true"/>
+          </Silicon>
+          <Thermal___Oxide isEnable="true">
+            <color ___blue="0" ___green="0" ___red="255" useDefaultColor="true"/>
+          </Thermal___Oxide>
+          <Aluminum isEnable="true">
+            <color ___blue="128" ___green="128" ___red="0" useDefaultColor="true"/>
+          </Aluminum>
+        </material>
+        <thickness ___expression="StructureThickness" ___lastKnownValue="15.0" ___unitName="um" isExpanded="true"/>
+        <verticalOffset ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+      </___Properties>
+    </___Item>
+    <___Item VersionNumber="2" ___Name="DeleteStep1" ___Type="DeleteStep">
+      <___Properties isEnable="true">
+        <deleteUnion ___activeMember="layers " isExpanded="true">
+          <material ___activeMember="" isExpanded="true">
+            <_SolidMaterial_Silicon UserDefinedName="Silicon" isEnable="true"/>
+            <_SolidMaterial_Aluminum UserDefinedName="Aluminum" isEnable="true"/>
+            <_SolidMaterial_Thermal___Oxide UserDefinedName="Thermal Oxide" isEnable="true"/>
+            <_SolidMaterial_Polysilicon UserDefinedName="Polysilicon" isEnable="true"/>
+          </material>
+          <layers ___activeMember="Sacrifice " isExpanded="true">
+            <Substrate UserDefinedName="Substrate" isEnable="true"/>
+            <Electrode UserDefinedName="Electrode" isEnable="true"/>
+            <Sacrifice UserDefinedName="Sacrifice" isEnable="true"/>
+            <Structure UserDefinedName="Structure" isEnable="true"/>
+          </layers>
+        </deleteUnion>
+      </___Properties>
+    </___Item>
+  </___DocumentTree>
+
+  <Layers ___Name="Layers" ___Type="Layers" isExpanded="true">
+    <___Properties isEnable="true"/>
+  </Layers>
+
+</___Document>

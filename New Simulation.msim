@@ -1,0 +1,2543 @@
+
+<___Document DocBuildTag="" DocCommit="3d3f1880f11f" DocType="msim" DocVersion="7.0.0">
+
+  <___Properties isEnable="true">
+    <SchematicFile RelativeFileName="./Accelero_TD_v1.3dsch" ___text="C:/Users/scien/Desktop/Accelero_TD_v1.3dsch" readonly="true"/>
+    <GetInfoLimit ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+    <getInfoPrecision ___activeMember="getInfoDefaultPrecisionProperties " isExpanded="true">
+      <getInfoDefaultPrecisionProperties isEnable="true"/>
+      <getInfoScientificPrecisionProperties isEnable="true" isExpanded="true">
+        <MaxGetInfoNumericPrecision ___expression="5" ___lastKnownValue="5.0" ___unitName="nounit"/>
+      </getInfoScientificPrecisionProperties>
+    </getInfoPrecision>
+  </___Properties>
+
+  <___Parser ___Name="Variables" ___Type="VariableRoot" isExpanded="true">
+    <___Item Imported="true" ___Name="T" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="298.15" ___lastKnownValue="298.15" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="Pressure" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="30000" ___lastKnownValue="30000.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit" readonly="true"/>
+          <upper ___expression="1e10" ___lastKnownValue="10000000000.0" ___unitName="nounit" readonly="true"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="ElectrodeThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="0.1" ___lastKnownValue="0.1" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="SacrificalThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="4.1" ___lastKnownValue="4.1" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="StructureThickness" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="15" ___lastKnownValue="15.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="Voltages" ___Type="VariableGroup" isExpanded="true">
+      <___Item Imported="true" ___Name="Base" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Delta" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="DeltaZ" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="BaseZ" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item Imported="true" ___Name="BoxSpring" ___Type="VariableGroup" isExpanded="true">
+      <___Item Imported="true" ___Name="ThickX" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="2.1" ___lastKnownValue="2.1" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="ThickY" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="2.1" ___lastKnownValue="2.1" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Gap" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="2.2" ___lastKnownValue="2.2" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item Imported="true" ___Name="AccDC" ___Type="VariableGroup" isExpanded="true">
+      <___Item Imported="true" ___Name="X" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Y" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Z" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item Imported="true" ___Name="AccAC" ___Type="VariableGroup" isExpanded="true">
+      <___Item Imported="true" ___Name="X" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Y" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+      <___Item Imported="true" ___Name="Z" ___Type="Variable">
+        <___Properties isEnable="true">
+          <value ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+          <isExposed ___expression="true" readonly="true"/>
+          <limits isEnable="true">
+            <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+            <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          </limits>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item Imported="true" ___Name="Hole" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="5" ___lastKnownValue="5.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+    <___Item Imported="true" ___Name="Spac" ___Type="Variable">
+      <___Properties isEnable="true">
+        <value ___expression="4" ___lastKnownValue="4.0" ___unitName="nounit"/>
+        <isExposed ___expression="true" readonly="true"/>
+        <limits isEnable="true">
+          <lower ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+          <upper ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+        </limits>
+      </___Properties>
+    </___Item>
+  </___Parser>
+
+  <___DocumentTree ___Name="Analyses" ___Type="SimulatorTreeRoot" isExpanded="true" schmd5="82061eec71ebeb3e942882a6a80d4589">
+    <___Properties isEnable="true">
+      <infiniteQFactorThreshold ___expression="1e6" ___lastKnownValue="1000000.0" ___unitName="nounit"/>
+    </___Properties>
+    <___Item ___Name="DC1" ___Type="DCAnalysisItem" isExpanded="true" step="1">
+      <___Properties VersionNumber="3" isEnable="true">
+        <connectorOverride isEnable="true" isExpanded="true">
+          <PrXN ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrXS ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrYN ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrYS ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrZ ___expression="VoltagesBase+VoltagesDeltaZ" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StXN ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StXS ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StYN ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StYS ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <tax ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <tay ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <taz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+        </connectorOverride>
+        <dcSolver isEnable="true">
+          <linearSolver ___activeMember="PardisoLU"/>
+          <tolerances isEnable="true">
+            <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+            <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+            <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+          </tolerances>
+          <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+          <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+        </dcSolver>
+        <outputOption isEnable="true">
+          <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+          <saveOnlyVisibleToMatlab_ ___expression="true"/>
+        </outputOption>
+        <saveAllIterations ___expression="false"/>
+      </___Properties>
+      <___Item ___Name="Accelero_TD_v1.DC1.dc" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.dc" md5="47c81fcf89d488dde5013284a41ef7eb"/>
+      <___Item ___Name="Modal1" ___Type="ModalAnalysisItem" isExpanded="true">
+        <___Properties VersionNumber="3" isEnable="true">
+          <mechanicalOnly ___expression="false"/>
+          <modalSolver ___activeMember="sparseModalSolverChoice " isExpanded="true">
+            <sparseModalSolverChoice VersionNumber="2" isEnable="true" isExpanded="true">
+              <numberOfModes ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit" undefLabel="All"/>
+              <advancedOptions isEnable="true">
+                <maximumNumberOfIterations ___expression="300" ___lastKnownValue="300.0" ___unitName="nounit" undefLabel="Solver Default (100*Number of Modes)"/>
+                <tolerance ___expression="1e-15" ___lastKnownValue="1e-15.0" ___unitName="nounit"/>
+                <targetFrequency ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz" undefLabel="Lowest Frequency"/>
+                <targetFrequencyQFactor ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Infinity"/>
+              </advancedOptions>
+            </sparseModalSolverChoice>
+            <denseModalSolverChoice isEnable="true">
+              <numberOfModes ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="All"/>
+            </denseModalSolverChoice>
+          </modalSolver>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.Modal1.eig.ac" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.Modal1.eig.ac" md5="9c9c37d7052e8a41a856808cfad24e99"/>
+      </___Item>
+      <___Item ___Name="DCAcX" ___Type="DCSweepItem" isExpanded="true" step="49">
+        <___Properties VersionNumber="2" isEnable="true">
+          <connectorOverride isEnable="true">
+            <PrXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrZ ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tax ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tay ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <taz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          </connectorOverride>
+          <dcSolver isEnable="true">
+            <linearSolver ___activeMember="PardisoLU"/>
+            <tolerances isEnable="true">
+              <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+              <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+              <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+            </tolerances>
+            <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+          </dcSolver>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+          <sweepSelection ___activeMember="tax " isExpanded="true" undefLabel="None">
+            <PrXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXN>
+            <PrXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXS>
+            <PrYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYN>
+            <PrYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYS>
+            <PrZ ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrZ>
+            <StXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXN>
+            <StXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXS>
+            <StYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYN>
+            <StYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYS>
+            <tax ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+                <numPoints ___expression="50" ___lastKnownValue="50.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tax>
+            <tay ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tay>
+            <taz ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="200" ___lastKnownValue="200.0" ___unitName="nounit"/>
+                <numPoints ___expression="50" ___lastKnownValue="50.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </taz>
+            <M47_x ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_x>
+            <M47_y ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_y>
+            <M47_z ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_z>
+            <M47_rx ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rx>
+            <M47_ry ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_ry>
+            <M47_rz ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rz>
+          </sweepSelection>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.DCAcX.dc_sweep" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.DCAcX.dc_sweep" md5="7bca819df7db28a5c029157e1625fd83"/>
+      </___Item>
+      <___Item ___Name="DCAcY" ___Type="DCSweepItem" isExpanded="true" step="79">
+        <___Properties VersionNumber="2" isEnable="true">
+          <connectorOverride isEnable="true">
+            <PrXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrZ ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tax ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tay ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <taz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          </connectorOverride>
+          <dcSolver isEnable="true">
+            <linearSolver ___activeMember="PardisoLU"/>
+            <tolerances isEnable="true">
+              <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+              <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+              <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+            </tolerances>
+            <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+          </dcSolver>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+          <sweepSelection ___activeMember="tay " isExpanded="true" undefLabel="None">
+            <PrXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXN>
+            <PrXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXS>
+            <PrYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYN>
+            <PrYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYS>
+            <PrZ ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrZ>
+            <StXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXN>
+            <StXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXS>
+            <StYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYN>
+            <StYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYS>
+            <tax ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="200" ___lastKnownValue="200.0" ___unitName="nounit"/>
+                <numPoints ___expression="50" ___lastKnownValue="50.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tax>
+            <tay ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+                <numPoints ___expression="80" ___lastKnownValue="80.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tay>
+            <taz ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="200" ___lastKnownValue="200.0" ___unitName="nounit"/>
+                <numPoints ___expression="50" ___lastKnownValue="50.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </taz>
+            <M47_x ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_x>
+            <M47_y ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_y>
+            <M47_z ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_z>
+            <M47_rx ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rx>
+            <M47_ry ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_ry>
+            <M47_rz ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rz>
+          </sweepSelection>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.DCAcY.dc_sweep" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.DCAcY.dc_sweep" md5="7e4e2838a209a9effbd9add1e062d76e"/>
+      </___Item>
+      <___Item ___Name="DCAcZ" ___Type="DCSweepItem" isExpanded="true" step="49">
+        <___Properties VersionNumber="2" isEnable="true">
+          <connectorOverride isEnable="true">
+            <PrXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrZ ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tax ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tay ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <taz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          </connectorOverride>
+          <dcSolver isEnable="true">
+            <linearSolver ___activeMember="PardisoLU"/>
+            <tolerances isEnable="true">
+              <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+              <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+              <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+            </tolerances>
+            <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+          </dcSolver>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+          <sweepSelection ___activeMember="taz " isExpanded="true" undefLabel="None">
+            <PrXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXN>
+            <PrXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrXS>
+            <PrYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYN>
+            <PrYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrYS>
+            <PrZ ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </PrZ>
+            <StXN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXN>
+            <StXS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StXS>
+            <StYN ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYN>
+            <StYS ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </StYS>
+            <tax ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="70" ___lastKnownValue="70.0" ___unitName="nounit"/>
+                <end ___expression="90" ___lastKnownValue="90.0" ___unitName="nounit"/>
+                <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tax>
+            <tay ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </tay>
+            <taz ___activeMember="linearByNumberOfSteps " isExpanded="true">
+              <linearByNumberOfSteps isEnable="true" isExpanded="true">
+                <start ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit"/>
+                <end ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+                <numPoints ___expression="50" ___lastKnownValue="50.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </taz>
+            <M47_x ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_x>
+            <M47_y ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_y>
+            <M47_z ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_z>
+            <M47_rx ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rx>
+            <M47_ry ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_ry>
+            <M47_rz ___activeMember="linearByNumberOfSteps ">
+              <linearByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </linearByNumberOfSteps>
+              <logByNumberOfSteps isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <numPoints ___expression="10" ___lastKnownValue="10.0" ___unitName="nounit"/>
+              </logByNumberOfSteps>
+              <linearByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </linearByIncrement>
+              <logByIncrement isEnable="true">
+                <start ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <end ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+                <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit"/>
+              </logByIncrement>
+              <setOfPoints>
+                <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" isArrayElement="true"/>
+              </setOfPoints>
+            </M47_rz>
+          </sweepSelection>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.DCAcZ.dc_sweep" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.DCAcZ.dc_sweep" md5="be46c6418b95572469a67759e468367e"/>
+      </___Item>
+      <___Item ___Name="ACX" ___Type="ACAnalysisItem" isExpanded="true" step="99">
+        <___Properties VersionNumber="3" isEnable="true">
+          <connectorSelection isEnable="true" isExpanded="true">
+            <PrXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXN>
+            <PrXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXS>
+            <PrYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYN>
+            <PrYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYS>
+            <PrZ isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrZ>
+            <StXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXN>
+            <StXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXS>
+            <StYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYN>
+            <StYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYS>
+            <tax isEnable="true" isExpanded="true">
+              <magnitude ___expression="9.81" ___lastKnownValue="9.81" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tax>
+            <tay isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tay>
+            <taz isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </taz>
+            <M47_x isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_x>
+            <M47_y isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_y>
+            <M47_z isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_z>
+            <M47_rx isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rx>
+            <M47_ry isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_ry>
+            <M47_rz isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rz>
+          </connectorSelection>
+          <sweepType ___activeMember="linearByNumberOfSteps " isExpanded="true">
+            <linearByNumberOfSteps isEnable="true" isExpanded="true">
+              <start ___expression="1" ___lastKnownValue="1.0" ___unitName="Hz"/>
+              <end ___expression="3000" ___lastKnownValue="3000.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </linearByNumberOfSteps>
+            <logByNumberOfSteps isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </logByNumberOfSteps>
+            <linearByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </linearByIncrement>
+            <logByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </logByIncrement>
+            <setOfPoints>
+              <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz" isArrayElement="true"/>
+            </setOfPoints>
+          </sweepType>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.ACX.ac" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.ACX.ac" md5="adc3843e87d43713ef4fb149d169155c"/>
+      </___Item>
+      <___Item ___Name="ACY" ___Type="ACAnalysisItem" isExpanded="true" step="99">
+        <___Properties VersionNumber="3" isEnable="true">
+          <connectorSelection isEnable="true" isExpanded="true">
+            <PrXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXN>
+            <PrXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXS>
+            <PrYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYN>
+            <PrYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYS>
+            <PrZ isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrZ>
+            <StXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXN>
+            <StXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXS>
+            <StYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYN>
+            <StYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYS>
+            <tax isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tax>
+            <tay isEnable="true" isExpanded="true">
+              <magnitude ___expression="9.81" ___lastKnownValue="9.81" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tay>
+            <taz isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </taz>
+            <M47_x isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_x>
+            <M47_y isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_y>
+            <M47_z isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_z>
+            <M47_rx isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rx>
+            <M47_ry isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_ry>
+            <M47_rz isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rz>
+          </connectorSelection>
+          <sweepType ___activeMember="linearByNumberOfSteps " isExpanded="true">
+            <linearByNumberOfSteps isEnable="true" isExpanded="true">
+              <start ___expression="1" ___lastKnownValue="1.0" ___unitName="Hz"/>
+              <end ___expression="3000" ___lastKnownValue="3000.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </linearByNumberOfSteps>
+            <logByNumberOfSteps isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </logByNumberOfSteps>
+            <linearByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </linearByIncrement>
+            <logByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </logByIncrement>
+            <setOfPoints>
+              <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz" isArrayElement="true"/>
+            </setOfPoints>
+          </sweepType>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.ACY.ac" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.ACY.ac" md5="3e245188f710b2ace34238a56791f5eb"/>
+      </___Item>
+      <___Item ___Name="ACZ" ___Type="ACAnalysisItem" isExpanded="true" step="99">
+        <___Properties VersionNumber="3" isEnable="true">
+          <connectorSelection isEnable="true" isExpanded="true">
+            <PrXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXN>
+            <PrXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrXS>
+            <PrYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYN>
+            <PrYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrYS>
+            <PrZ isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </PrZ>
+            <StXN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXN>
+            <StXS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StXS>
+            <StYN isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYN>
+            <StYS isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </StYS>
+            <tax isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tax>
+            <tay isEnable="true" isExpanded="true">
+              <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </tay>
+            <taz isEnable="true" isExpanded="true">
+              <magnitude ___expression="9.81" ___lastKnownValue="9.81" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </taz>
+            <M47_x isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_x>
+            <M47_y isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_y>
+            <M47_z isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_z>
+            <M47_rx isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rx>
+            <M47_ry isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_ry>
+            <M47_rz isEnable="true">
+              <magnitude ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+              <phase ___expression="" ___lastKnownValue="nan.0" ___unitName="degrees" undefLabel="Inherited"/>
+            </M47_rz>
+          </connectorSelection>
+          <sweepType ___activeMember="linearByNumberOfSteps " isExpanded="true">
+            <linearByNumberOfSteps isEnable="true" isExpanded="true">
+              <start ___expression="1" ___lastKnownValue="1.0" ___unitName="Hz"/>
+              <end ___expression="3000" ___lastKnownValue="3000.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </linearByNumberOfSteps>
+            <logByNumberOfSteps isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </logByNumberOfSteps>
+            <linearByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </linearByIncrement>
+            <logByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </logByIncrement>
+            <setOfPoints>
+              <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz" isArrayElement="true"/>
+            </setOfPoints>
+          </sweepType>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.ACZ.ac" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.ACZ.ac" md5="d7edf9cbc8b82a8ab1719acb54620d7d"/>
+      </___Item>
+      <___Item ___Name="DC1" ___Type="DCAnalysisItem" isExpanded="true" step="1">
+        <___Properties VersionNumber="3" isEnable="true">
+          <connectorOverride isEnable="true" isExpanded="true">
+            <PrXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <PrZ ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StXS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYN ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <StYS ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tax ___expression="AccDCX" ___lastKnownValue="10.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <tay ___expression="AccDCY" ___lastKnownValue="10.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <taz ___expression="AccDCZ" ___lastKnownValue="10.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+            <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          </connectorOverride>
+          <dcSolver isEnable="true">
+            <linearSolver ___activeMember="PardisoLU"/>
+            <tolerances isEnable="true">
+              <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+              <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+              <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+            </tolerances>
+            <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+          </dcSolver>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+          <saveAllIterations ___expression="false"/>
+        </___Properties>
+        <___Item ___Name="Accelero_TD_v1.DC1.DC1.dc" ___Type="AnalysisResult" filename="C:/Users/scien/Desktop/Accelero_TD_v1.DC1.DC1.dc" md5="28b590a8e51d63b0342d3686aa20f02b"/>
+      </___Item>
+    </___Item>
+    <___Item ___Name="DC2" ___Type="DCAnalysisItem" isExpanded="true" step="1">
+      <___Properties VersionNumber="3" isEnable="true">
+        <connectorOverride isEnable="true" isExpanded="true">
+          <PrXN ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrXS ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrYN ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrYS ___expression="VoltagesBase+VoltagesDelta" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <PrZ ___expression="VoltagesBase+VoltagesDeltaZ" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StXN ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StXS ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StYN ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <StYS ___expression="VoltagesBase" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <tax ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <tay ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <taz ___expression="0" ___lastKnownValue="0.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_x ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_y ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_z ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_rx ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_ry ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+          <M47_rz ___expression="" ___lastKnownValue="nan.0" ___unitName="nounit" undefLabel="Inherited"/>
+        </connectorOverride>
+        <dcSolver isEnable="true">
+          <linearSolver ___activeMember="PardisoLU"/>
+          <tolerances isEnable="true">
+            <relative ___expression="1e-3" ___lastKnownValue="0.001" ___unitName="nounit"/>
+            <absolute ___expression="1e-6" ___lastKnownValue="1e-06.0" ___unitName="nounit"/>
+            <absoluteF ___expression="1e-12" ___lastKnownValue="1e-12.0" ___unitName="nounit"/>
+          </tolerances>
+          <maximumSolverIterations ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+          <recursiveIterationDepth ___expression="8" ___lastKnownValue="8.0" ___unitName="nounit"/>
+        </dcSolver>
+        <outputOption isEnable="true">
+          <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+          <saveOnlyVisibleToMatlab_ ___expression="true"/>
+        </outputOption>
+        <saveAllIterations ___expression="false"/>
+      </___Properties>
+      <___Item ___Name="Noise1" ___Type="NoiseAnalysisItem" isExpanded="true" step="99">
+        <___Properties isEnable="true">
+          <sweepType ___activeMember="linearByNumberOfSteps " isExpanded="true">
+            <linearByNumberOfSteps isEnable="true" isExpanded="true">
+              <start ___expression="1" ___lastKnownValue="1.0" ___unitName="Hz"/>
+              <end ___expression="2000" ___lastKnownValue="2000.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </linearByNumberOfSteps>
+            <logByNumberOfSteps isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <numPoints ___expression="100" ___lastKnownValue="100.0" ___unitName="nounit"/>
+            </logByNumberOfSteps>
+            <linearByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </linearByIncrement>
+            <logByIncrement isEnable="true">
+              <start ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <end ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+              <increment ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz"/>
+            </logByIncrement>
+            <setOfPoints>
+              <e1 ___expression="" ___lastKnownValue="nan.0" ___unitName="Hz" isArrayElement="true"/>
+            </setOfPoints>
+          </sweepType>
+          <outputOption isEnable="true">
+            <decimation ___expression="1" ___lastKnownValue="1.0" ___unitName="nounit"/>
+            <saveOnlyVisibleToMatlab_ ___expression="true"/>
+          </outputOption>
+        </___Properties>
+      </___Item>
+    </___Item>
+  </___DocumentTree>
+
+  <___ExposedConnectorTree ___Name="Exposed Connectors" ___Type="ExposedConnectorTreeRoot" isExpanded="true">
+    <___Item ConnectorRootName="ElectricalConnectorRoot" IconName="ElectricalConnectorRoot" ___Name="Electrical Connectors" ___Type="ExposedConnectorsGroup" isExpanded="true">
+      <___Item ___Name="PrXN" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="PrXS" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="PrYN" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="PrYS" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="PrZ" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="StXN" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="StXS" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="StYN" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="StYS" ___Type="ElectricalConnectorItem" isExpanded="true">
+        <___Properties VersionNumber="2" isEnable="true">
+          <sourceType ConnectorSourceType="ElectricalConnectorSourceType" VersionNumber="2" ___activeMember="voltage ">
+            <voltage isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="V"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </voltage>
+            <charge isEnable="true">
+              <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+              <acSettings isEnable="true">
+                <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="C"/>
+                <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+              </acSettings>
+            </charge>
+          </sourceType>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item ConnectorRootName="InputRoot" IconName="InputRoot" ___Name="Inputs" ___Type="ExposedConnectorsGroup" isExpanded="true">
+      <___Item ___Name="tax" ___Type="TranslationalAccelerationInput" isExpanded="true">
+        <___Properties isEnable="true">
+          <dcValue ___expression="10" ___lastKnownValue="10.0" ___unitName="m/s^2"/>
+          <acSettings isEnable="true">
+            <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="m/s^2"/>
+            <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </acSettings>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="tay" ___Type="TranslationalAccelerationInput" isExpanded="true">
+        <___Properties isEnable="true">
+          <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="m/s^2"/>
+          <acSettings isEnable="true">
+            <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="m/s^2"/>
+            <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </acSettings>
+        </___Properties>
+      </___Item>
+      <___Item ___Name="taz" ___Type="TranslationalAccelerationInput" isExpanded="true">
+        <___Properties isEnable="true">
+          <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="m/s^2"/>
+          <acSettings isEnable="true">
+            <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="m/s^2"/>
+            <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+          </acSettings>
+        </___Properties>
+      </___Item>
+    </___Item>
+    <___Item ConnectorRootName="MechanicalConnectorRoot" IconName="MechanicalConnectorRoot" ___Name="Mechanical Connectors" ___Type="ExposedConnectorsGroup" isExpanded="true">
+      <___Item ___Name="M47" ___Type="ExposedMechanicalConnectorItem" isExpanded="true">
+        <___Item ___Name="M47_x" ___Type="TranslationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="TranslationalConnectorSourceType" ___activeMember="force ">
+              <position isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </position>
+              <force isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </force>
+            </sourceType>
+          </___Properties>
+        </___Item>
+        <___Item ___Name="M47_y" ___Type="TranslationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="TranslationalConnectorSourceType" ___activeMember="force ">
+              <position isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </position>
+              <force isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </force>
+            </sourceType>
+          </___Properties>
+        </___Item>
+        <___Item ___Name="M47_z" ___Type="TranslationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="TranslationalConnectorSourceType" ___activeMember="force ">
+              <position isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="um"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </position>
+              <force isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="N"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </force>
+            </sourceType>
+          </___Properties>
+        </___Item>
+        <___Item ___Name="M47_rx" ___Type="RotationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="RotationalConnectorSourceType" ___activeMember="moment ">
+              <angle isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </angle>
+              <moment isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </moment>
+            </sourceType>
+          </___Properties>
+        </___Item>
+        <___Item ___Name="M47_ry" ___Type="RotationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="RotationalConnectorSourceType" ___activeMember="moment ">
+              <angle isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </angle>
+              <moment isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </moment>
+            </sourceType>
+          </___Properties>
+        </___Item>
+        <___Item ___Name="M47_rz" ___Type="RotationalConnectorItem" isExpanded="true">
+          <___Properties isEnable="true">
+            <sourceType ConnectorSourceType="RotationalConnectorSourceType" ___activeMember="moment ">
+              <angle isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </angle>
+              <moment isEnable="true">
+                <dcValue ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                <acSettings isEnable="true">
+                  <magnitude ___expression="0" ___lastKnownValue="0.0" ___unitName="Nm"/>
+                  <phase ___expression="0" ___lastKnownValue="0.0" ___unitName="degrees"/>
+                </acSettings>
+              </moment>
+            </sourceType>
+          </___Properties>
+        </___Item>
+      </___Item>
+    </___Item>
+  </___ExposedConnectorTree>
+
+</___Document>
